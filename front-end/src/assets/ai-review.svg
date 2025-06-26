@@ -1,0 +1,35 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#f0fdfa"/>
+    </linearGradient>
+    <filter id="hueRotate">
+      <feColorMatrix type="hueRotate" values="0">
+        <animate attributeName="values" from="0" to="360" dur="5s" repeatCount="indefinite" />
+      </feColorMatrix>
+    </filter>
+  </defs>
+
+  <rect width="300" height="300" rx="24" fill="url(#bgGradient)" filter="url(#hueRotate)" />
+  
+  <g transform="translate(40,40)">
+    <rect x="0" y="0" width="220" height="160" rx="12" fill="white" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="20" y="30" width="180" height="15" rx="3" fill="#E2E8F0"/>
+    <rect x="20" y="55" width="140" height="15" rx="3" fill="#E2E8F0"/>
+    <rect x="20" y="80" width="160" height="15" rx="3" fill="#E2E8F0"/>
+    <rect x="20" y="105" width="100" height="15" rx="3" fill="#E2E8F0"/>
+    
+    <!-- AI Icon with pulsing animation -->
+    <g transform="translate(160, 115)">
+      <circle cx="20" cy="20" r="20" fill="#4F46E5">
+        <animate attributeName="r" values="20;23;20" dur="1.5s" repeatCount="indefinite" />
+      </circle>
+      <path d="M18 14H22V22H18V14ZM18 24H22V28H18V24Z" fill="white"/>
+    </g>
+  </g>
+
+  <text x="50%" y="260" text-anchor="middle" font-size="18" fill="#334155" font-family="Arial, sans-serif">
+    AI Code Analyzer
+  </text>
+</svg>
